@@ -17,3 +17,4 @@ We provide two pruning strategies by calculating candidate pairs in each block, 
 
 ## Matching
 The matching stage is to further verify the candidate matching pairs obtained after pruning operations. We will test the candidate pairs through the constraints carried by GDD rules. If all the constraints of any GDD are met, they will be considered for matching, otherwise they will not be considered for matching.  
+GDD mining and ER algorithm, see paper *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*
