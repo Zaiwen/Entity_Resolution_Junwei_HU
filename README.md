@@ -2,5 +2,18 @@
 Entity Resolution(ER) is the process of identifying and linking different records that refer to the same real-world entity. It is commonly used in data integration, data cleansing, fraud detection, and other applications where it is important to have accurate and consistent data. This work investigates the ER problem in property graphs. Our proposed ER framework is divided into three parts: blocking, pruning, and matching. As shown in the following figure.  
 ![image](https://github.com/Zaiwen/Entity_Resolution_Junwei_HU/blob/main/GraphER/Figure/er-framework.pdf)
 
-## input data:
+## Input data
 The source data can be obtained from here：https://github.com/hujunnwei/data-conversion
+
+## Blocking
+Blocking includes structural embedding, attribute embedding, and vector computation, respectively.  
+structural embedding reference https://ericdongyx.github.io/metapath2vec/m2v.html  
+attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
+vector computation reference https://github.com/falconn-lib/falconn  
+Through the above operations, we can obtain many blocks.
+
+## Pruning
+We provide two pruning strategies by calculating candidate pairs in each block, with the code in the Pruning folder.  
+
+## Matching
+The matching stage is to further verify the candidate matching pairs obtained after pruning operations. We will test the candidate pairs through the constraints carried by GDD rules. If all the constraints of any GDD are met, they will be considered for matching, otherwise they will not be considered for matching.  
