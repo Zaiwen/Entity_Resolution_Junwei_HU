@@ -10,7 +10,7 @@ Blocking includes structural embedding, attribute embedding, and vector computat
 structural embedding reference https://ericdongyx.github.io/metapath2vec/m2v.html  
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
 vector computation reference https://github.com/falconn-lib/falconn  
-Through the above operations, we can obtain many blocks.
+Through the above operations, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them to obtain new blocks.
 
 ## Pruning
 We provide two pruning strategies to remove significantly mismatched entity pairs in each block, one through edge weighting and the other through similarity. The calculation formula is described in the paper, and the code is in the Pruning folder. 
