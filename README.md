@@ -18,4 +18,8 @@ Through the above operations, we will obtain blocks based on structural similari
 We provide two pruning strategies to remove significantly mismatched entity pairs in each block, one through edge weighting and the other through similarity. The calculation formula is described in the paper, and the code is in the Pruning folder. 
 
 ## Matching
-The matching stage is to further verify the candidate matching pairs obtained after pruning operations. We will test the candidate pairs through the constraints carried by GDD rules. If all the constraints of any GDD are met, they will be considered for matching, otherwise they will not be considered for matching. GDD mining and ER algorithm, see paper *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*  
+The matching stage is to further verify the candidate matching pairs obtained after pruning operations. We will test the candidate pairs through the constraints carried by GDD rules. If all the constraints of any GDD are met, they will be considered for matching, otherwise they will not be considered for matching. GDD mining and ER algorithm, see paper *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*.
+
+## Evaluation
+In addition to recall, accuracy, and F1 scores, we also provide purity and CSSR to measure the quality of candidate sets generated during the blocking, pruning, and matching stages, as shown in the formula in the paper.
+
