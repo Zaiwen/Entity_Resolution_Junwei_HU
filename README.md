@@ -3,7 +3,8 @@ Entity Resolution(ER) is the process of identifying and linking different record
 ![image](https://github.com/Zaiwen/Entity_Resolution_Junwei_HU/blob/main/GraphER/Figure/framework.png)
 
 ## Input data
-The source data can be obtained from here：https://github.com/hujunnwei/data-conversion
+The source data can be obtained from here：https://github.com/hujunnwei/data-conversion  
+We also provide code for data conversion to convert relational data and graph data into each other.
 
 ## Blocking
 Blocking includes structural embedding, attribute embedding, and vector computation, respectively.  
