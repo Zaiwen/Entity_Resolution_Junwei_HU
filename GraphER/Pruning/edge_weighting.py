@@ -75,7 +75,7 @@ if __name__ == '__main__':
                         Cbs = 2/max_Cbs
                         Arcs = (1/len(aryy[i])+1/len(aryy[k]))/max_Arcs
                         weight = 2*(Cbs*Arcs)/(Cbs+Arcs)
-                        if weight >= average_weight*(1/2):
+                        if weight >= average_weight:
                             outfile.write(aryy[i][j] + " ")
                         break
         outfile.write("\n")

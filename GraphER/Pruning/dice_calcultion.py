@@ -1,8 +1,8 @@
 import re
 import time
-ary=[]
-aryy=[]
-aryyy=[]
+ary = []
+aryy = []
+aryyy = []
 def readfile():
     with open("ER_network_dm_first_pruning/prune_AM_blocks_(1).txt", 'r', encoding='utf-8')as f:
         for line in f:
