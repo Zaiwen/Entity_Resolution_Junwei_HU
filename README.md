@@ -12,7 +12,7 @@ Blocking includes structural embedding, attribute embedding, and vector computat
 structural reference https://ericdongyx.github.io/metapath2vec/m2v.html  
 ```
 cd Blocking/metapath2vec/ && make
-./metapath2vec
+./metapath2vec [options]
 ``` 
 ### 2. Attribute Embedding
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
