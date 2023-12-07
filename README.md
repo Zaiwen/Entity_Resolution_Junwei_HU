@@ -28,7 +28,7 @@ cd autoencoder/
 python main.py
 ```
 Finally, each node will have two embeddings: a structural embedding and an attribute embedding.
-### 3. LSH algorithm
+### 3. LSH Algorithm
 vector computation reference https://github.com/falconn-lib/falconn  
 The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
 ```
