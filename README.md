@@ -13,6 +13,13 @@ structural reference https://ericdongyx.github.io/metapath2vec/m2v.html
 '''
 cd Blocking/metapath2vec/ && make
 '''
+```
+@Override
+protected void onDestroy() {
+    EventBus.getDefault().unregister(this);
+    super.onDestroy();
+}
+``` 
 ### 2. Attribute Embedding
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
 ### 3. LSH algorithm
