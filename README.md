@@ -10,7 +10,7 @@ We also provide code for data conversion to convert relational data and graph da
 Blocking includes structural embedding, attribute embedding, and vector computation, respectively.  
 ### 1. Structural Embedding
 structural reference https://ericdongyx.github.io/metapath2vec/m2v.html  
-run *meta_paths.py* generates a sequence and inputs it into metapath2vec for training.
+run ```meta_paths.py``` generates a sequence and inputs it into metapath2vec for training.
 ```
 cd metapath2vec/ && make
 ./metapath2vec -train input_file -output output_file
