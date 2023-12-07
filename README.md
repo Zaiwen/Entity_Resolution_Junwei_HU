@@ -8,8 +8,11 @@ We also provide code for data conversion to convert relational data and graph da
 
 ## Blocking
 Blocking includes structural embedding, attribute embedding, and vector computation, respectively.  
-structural embedding reference https://ericdongyx.github.io/metapath2vec/m2v.html  
+### 1. Structural Embedding
+structural reference https://ericdongyx.github.io/metapath2vec/m2v.html  
+### 2. Attribute Embedding
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
+### 3. LSH algorithm
 By using the above embedding methods, vectorization of the property graph is completed based on its structure and attribute. The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
 vector computation reference https://github.com/falconn-lib/falconn  
 Through the above operations, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them to obtain new blocks.
