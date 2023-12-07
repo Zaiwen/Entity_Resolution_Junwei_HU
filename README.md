@@ -34,7 +34,7 @@ The obtained embedding vector will be input into the LSH algorithm *FALCONN*, wh
 ```
 pip install FALCONN
 ```
-For detailed usage instructions, please refer to https://github.com/FALCONN-LIB/FALCONN/wiki/How-to-Use-FALCONN, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them through run ```merge_block.py```.
+For detailed usage instructions, please refer to https://github.com/FALCONN-LIB/FALCONN/wiki/How-to-Use-FALCONN, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them through run ```merge_blocks.py```.
 
 ## Pruning
 We provide two pruning strategies to remove significantly mismatched entity pairs in each block, one through edge weighting and the other through similarity. The calculation formula is described in the paper, and the code is in the Pruning folder. 
