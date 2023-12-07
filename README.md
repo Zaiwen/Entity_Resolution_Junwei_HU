@@ -17,6 +17,17 @@ cd metapath2vec/ && make
 ``` 
 ### 2. Attribute Embedding
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
+Firstly, create a heterogeneous tripartite graph to guide random walks and learn the distributed representation of attribute values.  
+```
+cd embdi/
+python main.py -f path/to/config/file
+```
+Secondly, use an encoder-decoder feedforward neural network to learn the potential representations of nodes.  
+```
+cd autoencoder/
+python main.py
+```
+
 ### 3. LSH algorithm
 By using the above embedding methods, vectorization of the property graph is completed based on its structure and attribute. The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
 vector computation reference https://github.com/falconn-lib/falconn  
