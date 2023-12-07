@@ -18,8 +18,8 @@ metapath2vec bibtex information
 ------------------------------------------------
 
 Compile:
-	1.  cmd "make" in folder code_metapath2vec/
-	2.  run "metapath2vec" in folder code_metapath2vec/
+	1.  cmd "make" in folder metapath2vec/
+	2.  run "metapath2vec" in folder metapath2vec/
 
 Usage: ./metapath2vec [options] 
 The Options follow Mikolov et al.'s word2vec
