@@ -27,7 +27,7 @@ Secondly, use an encoder-decoder feedforward neural network to learn the potenti
 cd autoencoder/
 python main.py
 ```
-
+Finally, each node will have two embeddings: a structural embedding and an attribute embedding.
 ### 3. LSH algorithm
 By using the above embedding methods, vectorization of the property graph is completed based on its structure and attribute. The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
 vector computation reference https://github.com/falconn-lib/falconn  
