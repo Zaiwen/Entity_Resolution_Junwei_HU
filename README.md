@@ -29,9 +29,12 @@ python main.py
 ```
 Finally, each node will have two embeddings: a structural embedding and an attribute embedding.
 ### 3. LSH algorithm
-By using the above embedding methods, vectorization of the property graph is completed based on its structure and attribute. The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
 vector computation reference https://github.com/falconn-lib/falconn  
-Through the above operations, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them to obtain new blocks.
+The obtained embedding vector will be input into the LSH algorithm *FALCONN*, which is a commonly used nearest neighbor search method in high-dimensional spaces.  
+```
+pip install FALCONN
+```
+For detailed usage instructions, please refer to https://github.com/FALCONN-LIB/FALCONN/wiki/How-to-Use-FALCONN, we will obtain blocks based on structural similarity and blocks based on attribute similarity respectively, and then merge them through run ```merge_block.py```.
 
 ## Pruning
 We provide two pruning strategies to remove significantly mismatched entity pairs in each block, one through edge weighting and the other through similarity. The calculation formula is described in the paper, and the code is in the Pruning folder. 
