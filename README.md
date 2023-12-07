@@ -10,6 +10,9 @@ We also provide code for data conversion to convert relational data and graph da
 Blocking includes structural embedding, attribute embedding, and vector computation, respectively.  
 ### 1. Structural Embedding
 structural reference https://ericdongyx.github.io/metapath2vec/m2v.html  
+'''
+cd Blocking/metapath2vec/ && make
+'''
 ### 2. Attribute Embedding
 attribute embedding reference https://github.com/rcap107/embdi and https://github.com/qcri/DeepBlocker  
 ### 3. LSH algorithm
