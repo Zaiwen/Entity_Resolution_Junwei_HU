@@ -33,6 +33,7 @@ we use the default dataset fodors-zagats, and you can directly run the `main.py`
 python main.py
 ```
 ```
+(python3.6)[hujw@localhost hujw]$ python main.py
 --random walk guided by graph pattern done
 Starting training using file output_file/FZ.RACAR.w10.l100.txt
 Alpha: 0.000002  Progress: 100.08%  Words/thread/sec: 5.03k  
