@@ -32,6 +32,22 @@ we use the default dataset fodors-zagats, and you can directly run the `main.py`
 ```
 python main.py
 ```
+```
+--random walk guided by graph pattern done
+Starting training using file output_file/FZ.RACAR.w10.l100.txt
+Alpha: 0.000002  Progress: 100.08%  Words/thread/sec: 5.03k  
+--structural embedding done
+--attribute mapping in rules done
+Loading FastText model
+Training AutoEncoder model
+Obtaining node embeddings
+--attribute embedding done
+--vector transformation done
+--blocking phase done
+--put blocks together done
+--pruning phase done
+--matching phase done
+```
 You can find all the parameters in `main.py`, and the structural embedding and attribute embedding vectors can be found in the `embedding` folder. The intermediate files generated during this execution process will be saved in `output_file`, the final ER result is saved in `output_file/matching_pairs.txt`, as shown below, predicts that the two entities appearing in each row are the same entity.  
 ```
 821|70
