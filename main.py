@@ -27,7 +27,6 @@ def get_metapath(pattern_path):
             line = re.findall(r':(.*?)\)', line.strip('\n'))
             if line not in path:
                 path.append(line)
-    # Select the longest path and generate the meta-path
     for i in range(len(path)):
         for j in range(len(path)):
             if i != j and path[i][1] == path[j][0]:
