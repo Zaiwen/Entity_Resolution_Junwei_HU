@@ -1,0 +1,1 @@
+(0:restaurant1).name=(0:restaurant0).name 0->(0:restaurant0).eid=(0:restaurant1).eid
