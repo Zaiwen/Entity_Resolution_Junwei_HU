@@ -2,7 +2,7 @@
 Entity Resolution(ER) is the process of identifying and linking different records that refer to the same real-world entity. It is commonly used in data integration, data cleansing, fraud detection, and other applications where it is important to have accurate and consistent data. This work investigates the ER problem in property graphs. Our proposed ER framework, called **GraphER**, is divided into three parts: blocking, pruning, and matching. As shown in the following figure.  
 ![image](https://github.com/Zaiwen/Entity_Resolution_Junwei_HU/blob/main/framework.png)
 
-# Requirements
+## Requirements
 * python3.6
 * g++
 
@@ -17,6 +17,10 @@ cd metapath2vec
 g++ -o metapath2vec.so -shared -fPIC metapath2vec.cpp
 ```
 Then the metapath2vec.so dynamic library file will be generated.    
+
+## Dataset
+**GraphER** requires the input of a graph dataset, and here we show how to use **GraphER** to conduct experiments on the benchmark ER dataset fodors-zagats. Its original dataset can be found in `dataset/relational-dataset`. First, we convert the relational data into graph data by executing `dataset/preprocessing.py`, and then execute `txt2csv.py` to save the attribute values carried by the entity types that need to be resolved, all files will be saved in `dataset/network`.
+
 
 ## Input data
 The source data can be obtained from here：https://github.com/hujunnwei/data-conversion  
