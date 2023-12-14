@@ -27,6 +27,6 @@ We used fastText for word embedding that is pre-trained on Wikipedia. You can do
 ## Rule mining
 You can obtain detailed rule definitions and mining processes from these two papers：*Discovering Graph Differential Dependencies* and *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*. Ultimately, we will obtain frequent graph patterns such as `GDDs/frequency_ patterns/pattern0.txt` and linking rules such as `GDDs/linking_ Rules/rule0. txt`.
 
-## ER example
+## Running example
 
 
