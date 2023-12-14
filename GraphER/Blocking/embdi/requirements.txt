@@ -1,9 +1,0 @@
-gensim==4.2.0
-datasketch
-strsim
-scikit-learn
-numpy
-pandas
-tqdm
-networkx
-nltk
