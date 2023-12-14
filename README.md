@@ -19,8 +19,11 @@ g++ -o metapath2vec.so -shared -fPIC metapath2vec.cpp
 Then the metapath2vec.so dynamic library file will be generated.    
 
 ## Dataset
-**GraphER** requires the input of a graph dataset, and here we show how to use **GraphER** to conduct experiments on the benchmark ER dataset fodors-zagats. Its original dataset can be found in `dataset/relational-dataset`. First, we convert the relational data into graph data by executing `dataset/preprocessing.py`, and then execute `dataset/txt2csv.py` to save the attribute values carried by the entity types that need to be resolved, all files will be saved in `dataset/network`. You can find other datasets and preprocessed files here：https://github.com/hujunnwei/data-conversion.
+**GraphER** requires the input of a graph dataset, and here we show how to use **GraphER** to conduct experiments on the benchmark ER dataset fodors-zagats. Its original dataset can be found in `dataset/relational-dataset`. First, we convert the relational data into graph data by executing `dataset/preprocessing.py`, and then execute `dataset/txt2csv.py` to save the attribute values carried by the entity types that need to be resolved, all files will be saved in `dataset/network`. You can find other datasets and preprocessed files here：https://github.com/hujunnwei/data-conversion.  
 
+## Preliminaries
+### Word embedding
+We used fastText for word embedding that is pre-trained on Wikipedia. You can download it from here：https://fasttext.cc/docs/en/pretrained-vectors.html and unzip it to the path specified in `autoencoder/configurations.py`.
 
 ## Input data
 The source data can be obtained from here：https://github.com/hujunnwei/data-conversion  
