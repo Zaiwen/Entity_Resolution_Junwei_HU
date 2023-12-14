@@ -19,7 +19,7 @@ g++ -o metapath2vec.so -shared -fPIC metapath2vec.cpp
 Then the metapath2vec.so dynamic library file will be generated.    
 
 ## Dataset
-**GraphER** requires the input of a graph dataset, and here we show how to use **GraphER** to conduct experiments on the benchmark ER dataset fodors-zagats. Its original dataset can be found in `dataset/relational-dataset`. First, we convert the relational data into graph data by executing `dataset/preprocessing.py`, and then execute `txt2csv.py` to save the attribute values carried by the entity types that need to be resolved, all files will be saved in `dataset/network`.
+**GraphER** requires the input of a graph dataset, and here we show how to use **GraphER** to conduct experiments on the benchmark ER dataset fodors-zagats. Its original dataset can be found in `dataset/relational-dataset`. First, we convert the relational data into graph data by executing `dataset/preprocessing.py`, and then execute `dataset/txt2csv.py` to save the attribute values carried by the entity types that need to be resolved, all files will be saved in `dataset/network`.
 
 
 ## Input data
