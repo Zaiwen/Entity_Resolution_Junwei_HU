@@ -25,13 +25,14 @@ Then the metapath2vec.so dynamic library file will be generated.
 ### Word embedding
 We used fastText for word embedding that is pre-trained on Wikipedia. You can download it from here：https://fasttext.cc/docs/en/pretrained-vectors.html and unzip it to the path specified in `autoencoder/configurations.py`.  
 ### Rule mining
-You can obtain detailed rule definitions and mining processes from these two papers：*Discovering Graph Differential Dependencies* and *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*. Ultimately, we will obtain frequent graph patterns such as `GDDs/frequency_ patterns/pattern0.txt` and linking rules such as `GDDs/linking_ Rules/rule0.txt`.
+You can obtain detailed rule definitions and mining processes from these two papers：*Discovering Graph Differential Dependencies* and *Certus: An effective entity resolution approach with graph differential dependencies (GDDs)*. Here we show the example of frequent graph patterns such as `GDDs/frequency_ patterns/pattern0.txt` and linking rules such as `GDDs/linking_ Rules/rule0.txt`.
 
 ## Running example
 we use the default dataset fodors-zagats, and you can directly run the `main.py` file to perform entity resolution using the following command:  
 ```
 python main.py
 ```
+When run successfully, the following information appears in the terminal.
 ```
 (python3.6)[hujw@localhost hujw]$ python main.py
 --random walk guided by graph pattern done
@@ -48,6 +49,7 @@ Obtaining node embeddings
 --put blocks together done
 --pruning phase done
 --matching phase done
+Total time: 183.64s
 ```
 You can find all the parameters in `main.py`, and the structural embedding and attribute embedding vectors can be found in the `embedding` folder. The intermediate files generated during this execution process will be saved in `output_file`, the final ER result is saved in `output_file/matching_pairs.txt`, as shown below, predicts that the two entities appearing in each row are the same entity.  
 ```
