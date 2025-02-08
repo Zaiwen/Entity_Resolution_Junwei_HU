@@ -78,8 +78,8 @@ After building the image, we can use the following command to run the Docker con
 ```
 docker run --rm --name grapher-container grapher
 ```
-`--rm` makes the container a disposable container, and after the program runs, the container exits and is destroyed. If the container still exists after being needed, please delete it.  
-`--name` is used to name a container, and the system will automatically generate a name without adding it.  
+`--rm` indicates that the container will be automatically deleted after running. If the container still exists after being needed, please delete it.  
+`--name` specifies a name for the container.  
 When the container starts, it automatically runs `main.py`, and the corresponding output results appear in the locally mounted folder.
 
 
