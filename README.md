@@ -66,6 +66,20 @@ You can find all the parameters in `main.py`, and the structural embedding and a
 ...
 ```
 
+## Docker Environment
+Please ensure that [Docker](https://www.docker.com/get-started/) is installed on your machine.
+### Building Docker Images
+Based on the prepared Dockerfile, we can use the following command to build a Docker image:
+```
+docker build -t grapher .
+```
+### Run Docker Container
+After building the image, we can use the following command to run the Docker container:
+```
+docker run --rm --name grapher-container grapher
+```
+`--rm` makes the container a disposable container, and after the program runs, the container exits and is destroyed. If the container still exists after being needed, please delete it.
+`--name` grapher-container is used to name a container, and the system will automatically generate a name without adding it.
 
 
 
