@@ -67,7 +67,7 @@ You can find all the parameters in `main.py`, and the structural embedding and a
 ```
 
 ## Docker Environment
-Please ensure that [Docker](https://www.docker.com/get-started/) is installed on your machine. You can check if the installation was successful through the command: `docker --version`.
+Please ensure that [Docker](https://www.docker.com/get-started/) is installed on your machine. You can check if the installation was successful through the command `docker --version`.
 ### Building Docker Images
 Based on the prepared Dockerfile, we can use the following command to build a Docker image:
 ```
