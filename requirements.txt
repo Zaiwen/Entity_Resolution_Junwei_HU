@@ -2,8 +2,9 @@ fasttext
 numpy
 pandas
 pathlib
-scipy
-sklearn
 torch
 torchtext
+scipy
+scikit-learn
 FALCONN
+levenshtein
